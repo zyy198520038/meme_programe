@@ -74,7 +74,8 @@
     }
 
     function saveFile() {
-      window.open(document.querySelector('canvas').toDataURL());
+      window.open(document.querySelector('#mycanvas').toDataURL());
+      console.log(document.querySelector('#mycanvas').toDataURL())
     }
 
     function handleFileSelect(evt) {
